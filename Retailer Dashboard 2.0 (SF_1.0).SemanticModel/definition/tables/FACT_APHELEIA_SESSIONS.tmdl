@@ -1,0 +1,224 @@
+table FACT_APHELEIA_SESSIONS
+	lineageTag: f4d535d0-6fa7-45dc-9f3f-057344ef25eb
+	sourceLineageTag: b4043003-11e5-42b3-81e9-8efb080ccf06
+
+	column SESSION_ID
+		dataType: double
+		lineageTag: 4fcf36bc-a007-4f48-a5ea-47659532c559
+		sourceLineageTag: e98efad1-ce7e-4976-b812-2d7ae272273a
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: SESSION_ID
+
+		annotation SummarizationSetBy = User
+
+	column SESSION_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 07db30a2-b58d-471c-b2bc-77f45f67b97c
+		sourceLineageTag: a0343e06-f422-4478-ac80-79e5354bac4e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SESSION_DATE
+
+		annotation SummarizationSetBy = User
+
+	column VISITOR_ID
+		dataType: double
+		lineageTag: 36156b50-0751-40a2-a525-9d18fd19f159
+		sourceLineageTag: 16d9edd1-6911-4c2b-87d3-d0bee74bcb2a
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: VISITOR_ID
+
+		annotation SummarizationSetBy = User
+
+	column BRAND_ID
+		dataType: double
+		lineageTag: 38843051-5094-411a-a819-60cde98be03b
+		sourceLineageTag: 9b636104-ca59-4938-8f3c-fbf5916c3ee9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BRAND_ID
+
+		annotation SummarizationSetBy = User
+
+	column DEVICE_ID
+		dataType: double
+		lineageTag: 722e23bd-9103-4390-89de-329ec019020b
+		sourceLineageTag: 16a93597-5a61-4800-998e-9905ed996a89
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEVICE_ID
+
+		annotation SummarizationSetBy = User
+
+	column SITE_ID
+		dataType: double
+		lineageTag: b5fad3cd-d172-4e2d-8358-76c1037485df
+		sourceLineageTag: 495eff6c-8750-4a69-9a6a-a32e7c7b3c9f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SITE_ID
+
+		annotation SummarizationSetBy = User
+
+	column BROWSER_ID
+		dataType: double
+		lineageTag: ad92dd12-89b1-482b-a76f-2e48c8699542
+		sourceLineageTag: 8b21b314-2977-4568-a6e7-ecdb9a134a47
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BROWSER_ID
+
+		annotation SummarizationSetBy = User
+
+	column MEDIA_ID
+		dataType: double
+		lineageTag: 320cd583-5325-483a-953c-d19cb3757f15
+		sourceLineageTag: ad182321-e50f-491e-a236-b078ac9ccc7a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MEDIA_ID
+
+		annotation SummarizationSetBy = User
+
+	column MODEL_ID
+		dataType: double
+		lineageTag: 5d27f1ac-1f9d-485c-a75a-bbdc57d13d97
+		sourceLineageTag: 326fd927-6c15-48df-a847-fa6f0424841c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MODEL_ID
+
+		annotation SummarizationSetBy = User
+
+	column VISITED_MODEL_PAGE
+		dataType: double
+		lineageTag: dddbcab5-aa90-41ee-a733-d232ff974d20
+		sourceLineageTag: c8e87c9d-2087-4cc9-8375-e3b2ad09def5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: VISITED_MODEL_PAGE
+
+		annotation SummarizationSetBy = User
+
+	column STARTED_CAR_CONFIG
+		dataType: double
+		lineageTag: 0a5ae2f9-bcd8-4141-af38-6af3f8fc2c47
+		sourceLineageTag: b3d39e37-758c-4121-a4a0-7aa12d732b01
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: STARTED_CAR_CONFIG
+
+		annotation SummarizationSetBy = User
+
+	column COMPLETED_CAR_CONFIG
+		dataType: double
+		lineageTag: 7c0e5431-8a1a-462a-90f1-6ede62fc8f32
+		sourceLineageTag: 3550826a-36d8-4200-bebc-f034bea09934
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: COMPLETED_CAR_CONFIG
+
+		annotation SummarizationSetBy = User
+
+	column COMPLETED_FINANCE_CALCULATOR
+		dataType: double
+		lineageTag: 612ae171-fcb9-49fd-8695-06c2d0b7612f
+		sourceLineageTag: 45bb300f-ca2a-4de9-b2ca-0fb8fa3f2a82
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: COMPLETED_FINANCE_CALCULATOR
+
+		annotation SummarizationSetBy = User
+
+	column NEW_USED_FILTER_ID
+		dataType: double
+		lineageTag: 4b6fcc47-6cb9-4723-ac29-a495d583e5b5
+		sourceLineageTag: 9b0ce0f6-0aa2-435d-bea6-8c416e4852bc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NEW_USED_FILTER_ID
+
+		annotation SummarizationSetBy = User
+
+	column TL_ID
+		dataType: double
+		lineageTag: 2f616f0f-b621-4c38-a716-424896ba4ec0
+		sourceLineageTag: aa689e28-6b40-4652-9182-1baf232a74aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TL_ID
+
+		annotation SummarizationSetBy = User
+
+	column AP_CHECK
+		dataType: double
+		lineageTag: 53be93fc-6042-4216-bc68-fddbc8000eea
+		sourceLineageTag: f7d719b1-f01c-4b1a-99a4-50dfee235d9e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: AP_CHECK
+
+		annotation SummarizationSetBy = User
+
+	column LAUNCHDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f5b1109a-bc4b-42de-b99f-02e4cd2d2cef
+		sourceLineageTag: 6cf9fe34-6ef6-4745-995c-adec56349cd5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LAUNCHDATE
+
+		annotation SummarizationSetBy = User
+
+	column IS_APHELEIA
+		dataType: string
+		lineageTag: 9f4b070f-73fb-4292-83f5-46ef45149588
+		sourceLineageTag: c173912e-cc17-4c29-a8bc-fcb877600631
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IS_APHELEIA
+
+		annotation SummarizationSetBy = User
+
+	column AEM_RELEASE_ID
+		dataType: double
+		lineageTag: f71b5e1f-25a8-458c-b5e3-c84fd8f370ce
+		sourceLineageTag: 6e14c60c-9185-4a73-8616-0f62989eca67
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: AEM_RELEASE_ID
+
+		annotation SummarizationSetBy = User
+
+	column APH_BUILD_RELEASE_ID
+		dataType: double
+		lineageTag: b0a5d9c0-a3a4-40d6-a769-723b59f4de21
+		sourceLineageTag: a0b314bc-3045-46ca-bbd1-98ec3f283c58
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: APH_BUILD_RELEASE_ID
+
+		annotation SummarizationSetBy = User
+
+	column TOTAL_SECONDS_SPENT
+		dataType: double
+		lineageTag: f37a9f23-50d6-4eef-b7d0-548f2543a623
+		sourceLineageTag: f2cbbd45-0a1e-47c2-8ca5-30b169d3a09e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TOTAL_SECONDS_SPENT
+
+		annotation SummarizationSetBy = User
+
+	partition FACT_APHELEIA_SESSIONS = entity
+		mode: directQuery
+		source
+			entityName: FACT_APHELEIA_SESSIONS
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

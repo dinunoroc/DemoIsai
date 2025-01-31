@@ -1,0 +1,34 @@
+model Model
+	culture: en-GB
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DirectQuery to AS - Website Conversion SF_DEV"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.138.782.0 (24.11)
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
+
+ref table Session
+ref table DIM_SITE_MARKET_REGION
+ref table DIM_MODEL
+ref table DIM_DEVICE
+ref table DIM_DATE
+ref table DIM_BROWSER
+ref table Calculations
+ref table DIM_BRAND
+ref table DIM_NEW_USED
+ref table DIM_TRANSACTIONAL_LEADS
+ref table DIM_MEDIA
+ref table FACT_CUSTOMER_FEEDBACK
+ref table DIM_RETAILER
+ref table FACT_RETAILER_TRAFFIC
+ref table FACT_APHELEIA_SESSIONS
+
+ref cultureInfo en-GB
+

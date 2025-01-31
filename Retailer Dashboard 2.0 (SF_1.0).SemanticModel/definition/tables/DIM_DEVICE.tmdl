@@ -1,0 +1,43 @@
+table DIM_DEVICE
+	lineageTag: 21b81e5c-41a0-4e6e-b352-880312b90f95
+	sourceLineageTag: f10afbf9-b059-4e16-a597-218e8e253802
+
+	column DEVICE_KEY
+		dataType: string
+		lineageTag: a426a402-4ca1-456a-ae91-c19683b99b59
+		sourceLineageTag: d9fbc04c-113f-4318-aeb9-0a71ee96f606
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEVICE_KEY
+
+		annotation SummarizationSetBy = User
+
+	column DEVICE_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 5aac3ede-99d1-42ff-a114-9ebb2f34060e
+		sourceLineageTag: 9038b3c5-60cd-4016-a089-1a734dc050ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEVICE_ID
+
+		annotation SummarizationSetBy = User
+
+	column Device
+		dataType: string
+		lineageTag: bdf85e0a-4d48-4853-8a0b-74682b644af2
+		sourceLineageTag: 3354e70d-b91c-47cb-acb8-ea77f9736fe3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Device
+
+		annotation SummarizationSetBy = User
+
+	partition DIM_DEVICE = entity
+		mode: directQuery
+		source
+			entityName: DIM_DEVICE
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

@@ -1,0 +1,43 @@
+table DIM_BRAND
+	lineageTag: 2a1ee2dc-a6b5-4c4b-8c8a-ba7d41a0fe07
+	sourceLineageTag: 8c9dc779-8fb1-412f-a5b2-b7ea663a52dc
+
+	column BRAND_KEY
+		dataType: string
+		lineageTag: a677de10-8593-40ca-b5b4-5c0504b21331
+		sourceLineageTag: a396203f-962a-4f43-bdb5-8d7848433f20
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BRAND_KEY
+
+		annotation SummarizationSetBy = User
+
+	column BRAND_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 60dc2d9a-ccaf-4f08-b48b-2132ac477039
+		sourceLineageTag: 785cb8df-f192-4e6a-8806-a4ca6ad64251
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BRAND_ID
+
+		annotation SummarizationSetBy = User
+
+	column Brand
+		dataType: string
+		lineageTag: 331cec68-3df3-4cc5-af1c-4652a6288579
+		sourceLineageTag: 7dd1e3e5-6070-42e6-8054-fe6fea2c495c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Brand
+
+		annotation SummarizationSetBy = User
+
+	partition DIM_BRAND = entity
+		mode: directQuery
+		source
+			entityName: DIM_BRAND
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

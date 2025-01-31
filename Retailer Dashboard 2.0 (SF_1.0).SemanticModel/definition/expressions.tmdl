@@ -1,0 +1,11 @@
+expression 'DirectQuery to AS - Website Conversion SF_DEV' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/DX%20-%20DEV", "Website Conversion SF_DEV"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 7fd332ed-de4d-4359-bad1-27ef143be1d3
+
+	annotation PBI_IncludeFutureArtifacts = True
+

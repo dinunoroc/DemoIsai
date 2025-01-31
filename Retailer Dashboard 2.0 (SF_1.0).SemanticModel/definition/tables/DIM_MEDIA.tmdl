@@ -1,0 +1,43 @@
+table DIM_MEDIA
+	lineageTag: cd33b4f2-669c-45c7-aa43-d5698de93bd9
+	sourceLineageTag: e9206ed0-f5ba-4929-a396-476e81d3aa08
+
+	column MEDIA_KEY
+		dataType: string
+		lineageTag: 4bb7a7d4-1e95-4a21-9d05-62497c68ab63
+		sourceLineageTag: 6247c83c-206f-4ecb-971d-cd9eb029aa66
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MEDIA_KEY
+
+		annotation SummarizationSetBy = User
+
+	column MEDIA_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 29e702e1-f642-4ca3-8ec5-10c36c161368
+		sourceLineageTag: b76435e1-dfd6-4e4a-b02b-9e4804f006d0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MEDIA_ID
+
+		annotation SummarizationSetBy = User
+
+	column Media
+		dataType: string
+		lineageTag: 205a835c-ebb6-4735-832e-5b298f178cc7
+		sourceLineageTag: 839d0f5e-cdc3-4aaa-b854-9e283350e664
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Media
+
+		annotation SummarizationSetBy = User
+
+	partition DIM_MEDIA = entity
+		mode: directQuery
+		source
+			entityName: DIM_MEDIA
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

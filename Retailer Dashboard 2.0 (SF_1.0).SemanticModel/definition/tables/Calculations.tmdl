@@ -1,0 +1,718 @@
+table Calculations
+	lineageTag: 0c186916-3f42-40f5-bc6b-67699f7298c0
+	sourceLineageTag: 5a9c0f89-4e67-4084-939a-e29d922cb8fc
+
+	measure 'Session| Total Sessions' = EXTERNALMEASURE("Session| Total Sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: 5ba0e762-5592-40df-8818-64439cc06a49
+		sourceLineageTag: 0f0f6f55-45d4-4fca-93e4-5585c14f6c99
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Session Ratio Device' = EXTERNALMEASURE("Session| Total Session Ratio Device", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 4b60bc32-1a8a-4ac9-9b6c-6f707a2b48ce
+		sourceLineageTag: fda63a84-86c3-47da-8c90-93fde25cc23b
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Session Ratio Media' = EXTERNALMEASURE("Session| Total Session Ratio Media", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 5307a2b9-cbc9-42d5-bd16-28b08c1f0e10
+		sourceLineageTag: 715e2e7c-1a58-4a05-98fc-ddf45e633e1d
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Session Ratio Model' = EXTERNALMEASURE("Session| Total Session Ratio Model", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 94ad6589-f0dd-467f-84b7-e4bf2ae53250
+		sourceLineageTag: b5b89511-a6bf-4fec-8b86-5c4203372703
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions MTD' = EXTERNALMEASURE("Session| Total Sessions MTD", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: 93c7e847-bcb9-4187-96a6-ef0444eb20fb
+		sourceLineageTag: 566c60d0-31ec-4a7e-856b-9359b22a299c
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions MTD PM' = EXTERNALMEASURE("Session| Total Sessions MTD PM", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: 866133bb-24bd-4b3f-8fa1-31c5a190bff0
+		sourceLineageTag: cdb49e3a-232e-4026-b29a-810cbba3adce
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions MTD vs Total MTD PM' = EXTERNALMEASURE("Session| Total Sessions MTD vs Total MTD PM", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: ffc8b1d1-1be7-400f-90b1-23c11404c531
+		sourceLineageTag: ca9cb75c-4223-4b43-8fd3-dadd05f50367
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions PM FM' = EXTERNALMEASURE("Session| Total Sessions PM FM", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: a1703a0a-2ec5-4cdf-871b-1815d0b14ecb
+		sourceLineageTag: 30e3e824-8674-4fcd-ae22-2befd100cae4
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions PY FY' = EXTERNALMEASURE("Session| Total Sessions PY FY", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: 5f52c17f-0475-4051-ba9d-8039f9b4d1d5
+		sourceLineageTag: 8d4e7857-7e10-49e6-82a2-574047c118ee
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions YTD' = EXTERNALMEASURE("Session| Total Sessions YTD", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: 6e8f95f0-3de7-4766-bab2-d6fb304520c4
+		sourceLineageTag: 19fa363f-5918-4a1b-93a4-629b37da9317
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions YTD PY' = EXTERNALMEASURE("Session| Total Sessions YTD PY", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: 768c5802-9adf-47a0-8174-8fbe0394ab7e
+		sourceLineageTag: 5bfdd1d8-ba31-46a7-88a1-677b456f192d
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions YTD vs Total YTD PY' = EXTERNALMEASURE("Session| Total Sessions YTD vs Total YTD PY", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 164d8985-3a9b-4885-ac38-07eb6d8a8f37
+		sourceLineageTag: 91a7e31f-621c-4cf9-b134-9410df9d64d4
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total Visitors' = EXTERNALMEASURE("Visitor| Total Visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 1. High Level
+		lineageTag: eff95853-f078-4ffb-8b4a-1228645a1e63
+		sourceLineageTag: 46d1216d-a7e7-47b4-b3d9-06b5fe7eb0f3
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total Visitor Ratio Model' = EXTERNALMEASURE("Visitor| Total Visitor Ratio Model", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 1400961e-2109-46f3-8ead-ae7a560fb34a
+		sourceLineageTag: 46f73b63-1dd3-40b9-acab-c45aecb7dfda
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total Visitors Ratio Region' = EXTERNALMEASURE("Visitor| Total Visitors Ratio Region", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: c5affc55-3cc3-43e2-9bd0-0282bfeea45a
+		sourceLineageTag: 38df589e-3757-4c2a-8b66-d60c5c6577e3
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car model page visitors' = EXTERNALMEASURE("Visitor| Car model page visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 2. Model
+		lineageTag: c8e6a874-02b8-46a9-a2d7-2c8aaf74559b
+		sourceLineageTag: 8e5fdc45-bc21-4da2-8729-3942b2b30304
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Model page visitors Ratio Model' = EXTERNALMEASURE("Visitor| Model page visitors Ratio Model", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Model
+		lineageTag: 4c5b0a57-51b1-4f8d-a423-32f6db75b364
+		sourceLineageTag: c9a11f30-e438-42f7-b4c4-e09e2b39cb75
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Model page visitors Ratio Region' = EXTERNALMEASURE("Visitor| Model page visitors Ratio Region", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Model
+		lineageTag: 2700add9-fa6b-4df8-8743-83a8c38382ce
+		sourceLineageTag: bbe88450-1a43-4054-8bf7-d50c4b409c32
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Web to model page visitor conversion rate' = EXTERNALMEASURE("Visitor| Web to model page visitor conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Model
+		lineageTag: 169a8bed-c4f6-4962-aca6-4c65447af5c9
+		sourceLineageTag: 4a296bde-fce5-46ac-9d8e-79c142beb985
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config started visitors' = EXTERNALMEASURE("Visitor| Car config started visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 3. Car config start
+		lineageTag: 12187005-f575-47e0-8fef-f192a0163129
+		sourceLineageTag: fd11e4ca-4b5f-479a-b127-676da200d469
+		dataCategory: Uncategorized
+
+	measure 'Visitor| CC Started Ratio Model' = EXTERNALMEASURE("Visitor| CC Started Ratio Model", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: b8ffaa5a-f7cd-4ab7-a3ba-d8e9831cd1ac
+		sourceLineageTag: 66c22e2a-2259-47ba-a3f1-0784cea8b277
+		dataCategory: Uncategorized
+
+	measure 'Visitor| CC Started Ratio Region' = EXTERNALMEASURE("Visitor| CC Started Ratio Region", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: 6ade616e-45ce-4786-8aba-d35b3c113cd8
+		sourceLineageTag: a11254c1-acad-43ac-8e86-54336277a136
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Model 2 car config started conversion rate' = EXTERNALMEASURE("Visitor| Model 2 car config started conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: 901e9fca-f9b5-4e7c-9db0-09384bb4d779
+		sourceLineageTag: 89bf9c1d-d804-4d1a-aa60-b41fd86413f9
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total traffic to car config started %' = EXTERNALMEASURE("Visitor| Total traffic to car config started %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: 3321dfa4-2272-4403-9a60-7749bf5c0498
+		sourceLineageTag: ef3eb2df-644a-403f-aa20-b4f13f1ce019
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config completed visitors' = EXTERNALMEASURE("Visitor| Car config completed visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 4. Car config completed
+		lineageTag: e229caa3-9eec-4384-97c0-1c78facbd784
+		sourceLineageTag: eba97542-6ce8-421d-a4e9-bdc4fabb8139
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config start to completed conversion rate' = EXTERNALMEASURE("Visitor| Car config start to completed conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: da2eca33-2452-4f33-8188-b763d9e53628
+		sourceLineageTag: 720eaba0-05b9-408f-be83-8b1f3fc7588b
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config visitor completion rate' = EXTERNALMEASURE("Visitor| Car config visitor completion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: ce753740-6a8b-49da-8ac6-5a65c83125da
+		sourceLineageTag: 904bfae7-e992-4f72-8d46-7921d395ea44
+		dataCategory: Uncategorized
+
+	measure 'Visitor| CC Completed Ratio Model' = EXTERNALMEASURE("Visitor| CC Completed Ratio Model", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: 40b217d4-7d77-48fa-bb4d-6b33db810aef
+		sourceLineageTag: c8ca589e-6aeb-4b03-8ae4-5d3646771b49
+		dataCategory: Uncategorized
+
+	measure 'Visitor| CC Completed Ratio Region' = EXTERNALMEASURE("Visitor| CC Completed Ratio Region", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: f1d9c388-7a90-4b9b-b373-d73a558fcdda
+		sourceLineageTag: 197ae11a-1ada-4881-bbe7-b52ee3c3a7ba
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Model 2 car config completed conversion rate' = EXTERNALMEASURE("Visitor| Model 2 car config completed conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: 85eb3dda-6682-4e17-bcab-dd3fdd53035f
+		sourceLineageTag: 3941e54d-2380-416a-b8fa-66f44e943172
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total traffic to car config completed %' = EXTERNALMEASURE("Visitor| Total traffic to car config completed %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: 2328bd6e-35d4-414b-b92b-23b892eef330
+		sourceLineageTag: 238eda3e-537a-4468-bce1-9bc2d3f6388c
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Official conversion rate' = EXTERNALMEASURE("Visitor| Official conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		displayFolder: 5. Lead
+		lineageTag: ae7e5c0b-ef48-4395-ab41-1c936d022ed2
+		sourceLineageTag: 5a9ecbfe-6c21-45f5-bab8-4c3a8da09c72
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config completed to transactional lead %' = EXTERNALMEASURE("Visitor| Car config completed to transactional lead %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 3f1b5647-f480-4286-a45f-1661f928815c
+		sourceLineageTag: e3491498-6c66-4da9-accb-91e432d839c8
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config started to transactional lead %' = EXTERNALMEASURE("Visitor| Car config started to transactional lead %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 78030ad5-d046-4cc7-9e6d-1ca7306cf359
+		sourceLineageTag: b1205918-358c-4589-9fdf-6d43cca8bfad
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Model to transactional leads %' = EXTERNALMEASURE("Visitor| Model to transactional leads %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 486d9dad-25de-4273-a11d-ce19209bc312
+		sourceLineageTag: 8ae7469b-5d85-474c-b016-e18f1005c90b
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Official conversion rate (per TL)' = EXTERNALMEASURE("Visitor| Official conversion rate (per TL)", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 4a8baf9b-21d2-4880-8467-df56a27ee0e7
+		sourceLineageTag: 6e458ddf-f302-4a1d-8f42-13af81fca082
+		dataCategory: Uncategorized
+
+	measure 'Visitor| TL Ratio Model' = EXTERNALMEASURE("Visitor| TL Ratio Model", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: aac27d6d-9b93-4260-bc8e-b78d31506f76
+		sourceLineageTag: 911ba7e4-883e-471e-950f-3e84876db1f1
+		dataCategory: Uncategorized
+
+	measure 'Visitor| TL Ratio Region' = EXTERNALMEASURE("Visitor| TL Ratio Region", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: dfa310b6-7436-42e2-be73-18c23cf7a81e
+		sourceLineageTag: 19bd5ce5-0276-4a4e-bb03-cb99bdaf9204
+		dataCategory: Uncategorized
+
+	measure 'Visitor| TL Ratio TL Type' = EXTERNALMEASURE("Visitor| TL Ratio TL Type", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 6a305eee-a173-493e-bc05-f5a894fa7054
+		sourceLineageTag: 01610533-014d-4347-bb43-7b8da68c0e79
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Converted visitors' = EXTERNALMEASURE("Visitor| Converted visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 5. Lead
+		lineageTag: f90f312f-bdbd-4e72-bd36-308ddeb167c4
+		sourceLineageTag: 28724027-160e-476c-bfd2-462f083cd1d5
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Converted visitors % of total' = EXTERNALMEASURE("Visitor| Converted visitors % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 77202926-a057-41d0-aa43-5cde00fae87d
+		sourceLineageTag: 9b44ba9b-553b-4bf7-93f0-d1aad6b4d331
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total transactional leads' = EXTERNALMEASURE("Visitor| Total transactional leads", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 5. Lead
+		lineageTag: 68397f8e-b06b-4bc7-8df2-8becdffdee48
+		sourceLineageTag: 93f259ef-f720-4ce7-bd3c-ac564ba067a3
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total transactional leads (started CC)' = EXTERNALMEASURE("Visitor| Total transactional leads (started CC)", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 5. Lead
+		lineageTag: f10c7c75-1f1b-4204-a4f9-52eda578fd0d
+		sourceLineageTag: da3b0571-959e-496d-a449-5b514513cac8
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Converted Visitors %' = EXTERNALMEASURE("Visitor| Converted Visitors %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: bcab8170-761a-4377-a160-940d63589a94
+		sourceLineageTag: 1a543d63-6dfa-4928-963e-c18fc748d899
+		dataCategory: Uncategorized
+
+	measure 'Session| Car model sessions' = EXTERNALMEASURE("Session| Car model sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 2. Model
+		lineageTag: c944b876-973f-42a4-8b96-59044e97e618
+		sourceLineageTag: 25a85d95-acd8-4352-aaed-4e9ca0516774
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config started sessions' = EXTERNALMEASURE("Session| Car config started sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 3. Car config start
+		lineageTag: 8b104f05-356a-45ef-9be7-9a408d74f977
+		sourceLineageTag: c94a1bcf-b192-44d8-94ad-cb457cf5d704
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config completed sessions' = EXTERNALMEASURE("Session| Car config completed sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 4. Car config completed
+		lineageTag: 3d386e96-d8d1-4a30-92bb-4a22197ca542
+		sourceLineageTag: 95babef2-b683-47e5-a8b0-ebb5fa0e6387
+		dataCategory: Uncategorized
+
+	measure 'Session| Total distinct transactional leads' = EXTERNALMEASURE("Session| Total distinct transactional leads", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 5. Lead
+		lineageTag: e2fc3287-2a9b-4c06-8482-b3c67621fc48
+		sourceLineageTag: 2e8a52a9-37d3-45b3-a934-296aa6fde4c2
+		dataCategory: Uncategorized
+
+	measure 'Session| Total transactional leads' = EXTERNALMEASURE("Session| Total transactional leads", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0
+		displayFolder: 5. Lead
+		lineageTag: 4e4f823e-1b5e-4a46-80dc-b4228ac79fdb
+		sourceLineageTag: 53fcd111-b070-47df-bb4d-4dc2f4cc5736
+		dataCategory: Uncategorized
+
+	measure 'Session| Web to transactional lead conversion' = EXTERNALMEASURE("Session| Web to transactional lead conversion", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 4b1f2cef-8618-4807-92b4-5a1244f9769a
+		sourceLineageTag: 99e0519d-0caa-42a7-8502-2062be80b061
+		dataCategory: Uncategorized
+
+	measure 'Session| TL Ratio TL Type' = EXTERNALMEASURE("Session| TL Ratio TL Type", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 619c501e-8313-4e5d-aeb8-64c725da33b2
+		sourceLineageTag: 0b71cae3-4eb3-4cf4-8014-8b6e9b98f76a
+		dataCategory: Uncategorized
+
+	measure 'Session| Web to transactional lead conversion (per TL)' = EXTERNALMEASURE("Session| Web to transactional lead conversion (per TL)", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 1492e692-1699-4326-a3f1-7d43dc8895bc
+		sourceLineageTag: 5c398331-ea90-4045-97e0-f8b4941a2814
+		dataCategory: Uncategorized
+
+	measure 'Average Feedback Score' = EXTERNALMEASURE("Average Feedback Score", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00
+		displayFolder: 6. CX
+		lineageTag: ce504b2c-8cdf-4b9a-b12e-5e6b4e076e09
+		sourceLineageTag: 62393828-2bca-48c5-b2b8-d82856c3c32a
+		dataCategory: Uncategorized
+
+	measure 'Count of each feedback score' = EXTERNALMEASURE("Count of each feedback score", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 6. CX
+		lineageTag: bae56165-6755-4159-b04e-cfd948fcea2d
+		sourceLineageTag: 77992277-50ca-46b3-9eff-db902328cad7
+		dataCategory: Uncategorized
+
+	measure 'Median Feedback Score' = EXTERNALMEASURE("Median Feedback Score", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0
+		displayFolder: 6. CX
+		lineageTag: 0a2af09b-c68d-44f3-9390-f97edd267ad9
+		sourceLineageTag: 6ef3f743-940f-412e-97f6-48fab5bbdb53
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config completed to transactional lead %' = EXTERNALMEASURE("Session| Car config completed to transactional lead %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		displayFolder: 5. Lead
+		lineageTag: 6f776388-95c5-4144-a70a-7fe7c362592c
+		sourceLineageTag: e6136129-3e9f-4c41-82f7-327f14047318
+		dataCategory: Uncategorized
+
+	measure 'Session| Total Sessions % of total' = EXTERNALMEASURE("Session| Total Sessions % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 24586ace-ba08-4e4e-b08c-83397611e363
+		sourceLineageTag: 62e475d5-09ea-4f1c-87fd-465ba639f367
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car model page visitors % of total' = EXTERNALMEASURE("Visitor| Car model page visitors % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Model
+		lineageTag: e867597e-07c6-476d-97ae-a4a104926f6e
+		sourceLineageTag: 47717ecc-3d05-41c9-877a-c0460f91a566
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config started visitors % of total' = EXTERNALMEASURE("Visitor| Car config started visitors % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: 4a4dfac9-ef48-4bd3-8880-8e0c7027eaac
+		sourceLineageTag: 32ed07fe-bb85-4a5f-a5da-d0133b2efa67
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Car config completed visitors % of total' = EXTERNALMEASURE("Visitor| Car config completed visitors % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: 13ee3ce7-1031-4740-9c4f-9230cde6d93b
+		sourceLineageTag: f3ff6fb9-a0fe-4406-b149-4e6b38edd8e1
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config started sessions % of total' = EXTERNALMEASURE("Session| Car config started sessions % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: 9774766e-9f0b-4cca-872d-a709c1766c22
+		sourceLineageTag: 0597e19a-eb56-4fed-826d-7e680d51769e
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config completed sessions % of total' = EXTERNALMEASURE("Session| Car config completed sessions % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: e95f2f52-ffc3-4082-8bac-a5d2e23bc6b9
+		sourceLineageTag: dd037aac-ed0d-4506-84cc-80768acac281
+		dataCategory: Uncategorized
+
+	measure 'Session| Total transactional leads % of total' = EXTERNALMEASURE("Session| Total transactional leads % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: fc8532e9-410b-4fcd-9434-214904bd613a
+		sourceLineageTag: ec16bbf3-4636-40ac-a449-9f62ee57a7c0
+		dataCategory: Uncategorized
+
+	measure 'Visitor| Total Visitors % of total' = EXTERNALMEASURE("Visitor| Total Visitors % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: 436720fb-aac3-4374-a9f6-c367662c8705
+		sourceLineageTag: 0995b0c5-d2a6-464c-957c-3af161234100
+		dataCategory: Uncategorized
+
+	measure 'Session| Web to model session conversion rate' = EXTERNALMEASURE("Session| Web to model session conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 2. Model
+		lineageTag: b1a59879-684f-44a2-a198-d471faefeb29
+		sourceLineageTag: 9edee531-bb0b-4c58-86c7-8267ca6eb3b8
+		dataCategory: Uncategorized
+
+	measure 'Session| Model 2 car config started conversion rate' = EXTERNALMEASURE("Session| Model 2 car config started conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 3. Car config start
+		lineageTag: 9d999772-87a7-4ba5-9dca-6719c4bd1446
+		sourceLineageTag: b39c25de-795c-4c86-8708-4e0ec4ccb227
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config start to completed conversion rate' = EXTERNALMEASURE("Session| Car config start to completed conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: 476c1440-4524-4f84-aff4-654e1426ec87
+		sourceLineageTag: ec444246-fe08-423a-b3a8-deaa14440d7c
+		dataCategory: Uncategorized
+
+	measure 'Session| Car config started to transactional lead %' = EXTERNALMEASURE("Session| Car config started to transactional lead %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 5. Lead
+		lineageTag: 0f5932b3-ee91-4180-9d2a-f6c6a8fdb9e8
+		sourceLineageTag: b3066b27-39a3-4a15-a136-7f55385b2a83
+		dataCategory: Uncategorized
+
+	measure 'Session| Model 2 car config completed conversion rate' = EXTERNALMEASURE("Session| Model 2 car config completed conversion rate", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 4. Car config completed
+		lineageTag: e2200848-9945-49f7-ad9d-44fcac4ea8c3
+		sourceLineageTag: 2c193b39-6bdd-4339-9094-ecfc113a1f90
+		dataCategory: Uncategorized
+
+	measure 'Session| Total UC Sessions' = EXTERNALMEASURE("Session| Total UC Sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0
+		displayFolder: 1. High Level
+		lineageTag: 8ef31699-ba40-4955-a1ce-2b0027a6dfb2
+		sourceLineageTag: d25dc261-73c0-4455-9abd-040eddb66dd9
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Test Drives' = EXTERNALMEASURE("Retailer| Test Drives", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: d01f7430-0bb5-4b9d-9e30-95c6994915d2
+		sourceLineageTag: 3e5ef3f4-1931-4dec-ba96-47c47afb40dc
+		dataCategory: Uncategorized
+
+	measure 'Retailer| ContactRequests' = EXTERNALMEASURE("Retailer| ContactRequests", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 8ec919e6-bf60-48fe-9796-85143fc1543e
+		sourceLineageTag: a037275e-4c74-4a80-b13e-81460cbb1a24
+		dataCategory: Uncategorized
+
+	measure 'Session| Total UC Sessions % of total' = EXTERNALMEASURE("Session| Total UC Sessions % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 1. High Level
+		lineageTag: af8bc0e5-427e-4fad-a683-bce9868ad70d
+		sourceLineageTag: bc788711-ca50-431e-9d32-bf9078273c8a
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total Sessions' = EXTERNALMEASURE("Retailer| Total Sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 61400247-598d-47c6-90da-1dc47e3f1b9d
+		sourceLineageTag: b36d857f-f7a4-4456-bb5f-a124b00ef73d
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total UC Sessions' = EXTERNALMEASURE("Retailer| Total UC Sessions", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 23730a2c-47ec-41c1-b264-1a84c8444920
+		sourceLineageTag: 06fccb3b-69a7-46b4-9cae-a4711d75f73d
+		dataCategory: Uncategorized
+
+	measure 'Retailers| Total Visitors' = EXTERNALMEASURE("Retailers| Total Visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 02962c12-151c-4097-9d5a-fa794474c027
+		sourceLineageTag: 79d44339-dfe6-4e99-a124-54ecfb9e2a76
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Retailer| Total Transactional Leads' = EXTERNALMEASURE("Retailer| Total Transactional Leads", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: afd1f3aa-53d7-41ff-88c5-568beaf7ae31
+		sourceLineageTag: 78f13680-a635-49fc-9266-a822a86ee57f
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Converted visitors' = EXTERNALMEASURE("Retailer| Converted visitors", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 6e759617-f153-4f47-9fd9-607ae36988a4
+		sourceLineageTag: b9512a3b-a3ae-44ab-87ba-f084bdfa5d75
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total Online Reservations' = EXTERNALMEASURE("Retailer| Total Online Reservations", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 2d9bd48e-e93c-41a9-bc5c-7d38e4ac1350
+		sourceLineageTag: e7a99fe9-8709-4ecb-8028-e88cda6877fe
+		dataCategory: Uncategorized
+
+	measure 'Retailer| NC Online Reservations' = EXTERNALMEASURE("Retailer| NC Online Reservations", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 8cf63ffa-db2e-45fe-8fb1-5fb4a7d93aa6
+		sourceLineageTag: 1ffa6b21-abe9-4a89-81d5-edf24b06e85e
+		dataCategory: Uncategorized
+
+	measure 'Retailer| UC Online Reservations' = EXTERNALMEASURE("Retailer| UC Online Reservations", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 5bb5512a-87c8-46d2-b861-e8dc04a6a579
+		sourceLineageTag: 6fa0fd86-6173-4d68-b1f6-4d97d82d4bf5
+		dataCategory: Uncategorized
+
+	measure 'Retailer| ContactRequests (Phone)' = EXTERNALMEASURE("Retailer| ContactRequests (Phone)", INTEGER, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: #,0
+		displayFolder: 7. Retailer
+		lineageTag: 84a7cc0c-60b0-475d-bd7e-e7d613f830b6
+		sourceLineageTag: d35bf822-465e-482c-ac65-a9738d64fc6d
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total Visitors % of total' = EXTERNALMEASURE("Retailer| Total Visitors % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: 57275567-da49-406b-8047-2ec9383eff52
+		sourceLineageTag: 208961c5-7da9-4b98-9081-c8e89f65d439
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total Sessions % of total' = EXTERNALMEASURE("Retailer| Total Sessions % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: 64cf20e7-ef62-43b4-9b41-d9430fce3a76
+		sourceLineageTag: 1999ca18-322c-4752-931e-3fc5396fd3fa
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total UC Sessions % of total' = EXTERNALMEASURE("Retailer| Total UC Sessions % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: d052f621-090f-4bf1-94c3-222f03c2a1fb
+		sourceLineageTag: c9b3002a-cfe5-4809-ac01-6508206075d4
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Total transactional leads % of total' = EXTERNALMEASURE("Retailer| Total transactional leads % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: 99080353-097f-4ecf-9bfe-80b4d424c6d4
+		sourceLineageTag: 207def81-f470-4b7e-880a-b1ea3e77e781
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Contact Requests % of total' = EXTERNALMEASURE("Retailer| Contact Requests % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: 715cd7fa-864e-47c5-a346-044b193c874e
+		sourceLineageTag: 5cd530ad-0e55-47d2-ad3a-9023e2cba11a
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Test Drives % of total' = EXTERNALMEASURE("Retailer| Test Drives % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: aaff6d11-0643-42a2-9a34-19408bdc1ce0
+		sourceLineageTag: 30c09150-f030-4e3e-b0b7-c4d8e8fc825d
+		dataCategory: Uncategorized
+
+	measure 'Retailer| NC Online Reservations % of total' = EXTERNALMEASURE("Retailer| NC Online Reservations % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: 18a959f2-e0b3-4936-8200-293547fe564a
+		sourceLineageTag: c03f1217-0fe7-4b38-b9c7-f9f0f2423674
+		dataCategory: Uncategorized
+
+	measure 'Retailer| UC Online Reservations % of total' = EXTERNALMEASURE("Retailer| UC Online Reservations % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: e7b9d704-6d01-4552-bee2-4eaf4e4287f3
+		sourceLineageTag: bd3c0369-0663-4b0c-af31-a076b38409e4
+		dataCategory: Uncategorized
+
+	measure 'Retailer| Contact Requests (Phone) % of total' = EXTERNALMEASURE("Retailer| Contact Requests (Phone) % of total", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 7. Retailer\%
+		lineageTag: 8ccf816c-49f5-4848-8e66-dcb55e16f63b
+		sourceLineageTag: 67ac2c37-af21-4909-a229-d7e2fb4f362e
+		dataCategory: Uncategorized
+
+	measure 'Visitors who left feedback %' = EXTERNALMEASURE("Visitors who left feedback %", DOUBLE, "DirectQuery to AS - Website Conversion SF_DEV")
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 6. CX
+		lineageTag: a958c52e-61c4-412f-ac8f-76c222323203
+		sourceLineageTag: 17e3ea04-3211-46c8-bfae-aafa5e6a0bb3
+		dataCategory: Uncategorized
+
+	measure TEST1 = ```
+			
+			
+			var TotalLeads = 
+			    SUMX(
+			        FILTER(
+			            VALUES(DIM_TRANSACTIONAL_LEADS[TL_TYPE_ID]),  
+			            DIM_TRANSACTIONAL_LEADS[TL_TYPE_ID] = 1     
+			        ),
+			        CALCULATE(DISTINCTCOUNT('FACT_RETAILER_TRAFFIC'[Session_ID]))
+			    )
+			
+			return TotalLeads
+			```
+		formatString: 0
+		displayFolder: 7. Retailer
+		lineageTag: 693dd302-80a1-4a9b-8e87-3d9f4e92be08
+
+		changedProperty = DisplayFolder
+
+		changedProperty = Name
+
+	measure TEST2 = ```
+			
+			CALCULATE(
+			    [TEST1], 
+			        FILTER(DIM_DEVICE,
+			        DIM_DEVICE[Device] = "Mobile"
+			    )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: 7. Retailer
+		lineageTag: 82e5d851-f107-466c-8ec8-5e831f70b147
+
+		changedProperty = DisplayFolder
+
+		changedProperty = Name
+
+	measure TEST3 =
+			
+			CALCULATE(DISTINCTCOUNT('Session'[VISITOR_ID]), FILTER('Session', 'Session'[TL_ID] <> 0))
+		formatString: 0
+		displayFolder: 7. Retailer
+		lineageTag: e0d203ae-7526-43f6-92d4-232a0a7e3794
+
+		changedProperty = DisplayFolder
+
+		changedProperty = Name
+
+	column Value
+		dataType: string
+		isHidden
+		lineageTag: 57358741-8875-4f93-9d4f-99d4bf3b2bc9
+		sourceLineageTag: 97c6f42b-899d-47ac-8cd5-db6e77ef91b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = User
+
+	partition Calculations = entity
+		mode: directQuery
+		source
+			entityName: Calculations
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

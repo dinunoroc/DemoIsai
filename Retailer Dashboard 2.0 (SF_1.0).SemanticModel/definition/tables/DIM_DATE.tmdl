@@ -1,0 +1,173 @@
+table DIM_DATE
+	lineageTag: ce91072e-3898-4f3c-bf3f-b8cff2f6fb13
+	sourceLineageTag: 34854ea1-406a-4564-85ac-2c239ed28c5a
+
+	column DATE_KEY
+		dataType: string
+		lineageTag: fcfd1930-b319-44ae-acd5-69a546909cd1
+		sourceLineageTag: a4cc52d4-c03c-4639-9533-1e17f996f484
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DATE_KEY
+
+		annotation SummarizationSetBy = User
+
+	column DATE_ID
+		dataType: string
+		isNullable: false
+		lineageTag: 6bf207fc-6734-4027-b172-dd86afb10ed3
+		sourceLineageTag: 90a0c9db-8632-4e1a-b3b2-696fe7a1cd48
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DATE_ID
+
+		annotation SummarizationSetBy = User
+
+	column DAY_OF_WEEK_NAME_SHORT
+		dataType: string
+		lineageTag: 6377364d-771c-49f6-91a2-60f8f375e059
+		sourceLineageTag: 9029b117-9c6a-4369-a21d-c17fd453a674
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DAY_OF_WEEK_NAME_SHORT
+
+		annotation SummarizationSetBy = User
+
+	column MONTH_NAME
+		dataType: string
+		lineageTag: 31d434e7-7688-4551-8698-ff47822b1bcd
+		sourceLineageTag: 94c86a34-e125-470b-bcab-77a7a4196889
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MONTH_NAME
+
+		annotation SummarizationSetBy = User
+
+	column MONTH_NAME_SHORT
+		dataType: string
+		lineageTag: e7ecee46-41bc-4529-bf5c-a9bebb728145
+		sourceLineageTag: 2694b3cb-8260-4606-b432-1db63f59d3f0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MONTH_NAME_SHORT
+
+		annotation SummarizationSetBy = User
+
+	column Year
+		dataType: string
+		lineageTag: 41575f4b-2a9e-4d91-89f1-dd71c50d73c6
+		sourceLineageTag: e2bd17b2-eeb0-40c6-9095-1888398144c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: Short Date
+		lineageTag: 0520f8e2-2212-4403-b397-df237b740461
+		sourceLineageTag: 5058c923-fe16-4d4c-abef-7a4e59595219
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Quarter'
+		dataType: string
+		lineageTag: 00244bcc-e03f-47d9-8a81-2fe1a84a7cd0
+		sourceLineageTag: c2d33b36-cbf2-488d-8aae-ecea32a6eed5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year Quarter
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Month'
+		dataType: string
+		lineageTag: 82f834e4-7a27-48c8-88b2-4b673be90e81
+		sourceLineageTag: 17a5dffd-039e-40c2-826f-e70109cf7c0a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year Month
+		sortByColumn: YEAR_MONTH_NUM
+
+		annotation SummarizationSetBy = User
+
+	column 'YEAR MONTH WEEK'
+		dataType: string
+		lineageTag: 975227dd-90d3-4b12-b878-6bff1e7a7929
+		sourceLineageTag: 104f9bae-5ae0-415d-a743-194e12f37b3c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: YEAR MONTH WEEK
+
+		annotation SummarizationSetBy = User
+
+	column YEAR_MONTH_NUM
+		dataType: double
+		isHidden
+		lineageTag: 7296ce20-5e3b-4214-b3a3-229fd0adb230
+		sourceLineageTag: 63a84da0-a4ea-4f40-969e-e7a05d940f0c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: YEAR_MONTH_NUM
+
+		annotation SummarizationSetBy = User
+
+	column 'Week of Year'
+		dataType: string
+		lineageTag: 090cc694-3606-4854-9a9f-a5fd57f7ebac
+		sourceLineageTag: 75b8d79a-c790-42f1-89d1-eb2d7ada761c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Week of Year
+		sortByColumn: WEEK_OF_YEAR_NUM
+
+		annotation SummarizationSetBy = User
+
+	column WEEK_OF_YEAR_NUM
+		dataType: double
+		isHidden
+		lineageTag: eebbe720-9a4e-45af-a663-618c2b0d52ce
+		sourceLineageTag: 547ce0ff-d211-4186-8344-f082623abb0b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: WEEK_OF_YEAR_NUM
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'YEAR_NUMBER Hierarchy'
+		lineageTag: 40507ae8-8fe5-467b-8279-f8765d6d63ad
+		sourceLineageTag: a88f2317-27b8-4b11-b210-02285eea40d8
+
+		level 'Year Quarter'
+			lineageTag: 775b09dc-60aa-4f99-8b04-a6f7c106ca80
+			sourceLineageTag: d6e51b34-dfd7-4284-98ef-14dbe014573e
+			column: 'Year Quarter'
+
+		level 'Year Month'
+			lineageTag: 6c890cd9-766a-4d5d-9ee9-440ff4d5b0f8
+			sourceLineageTag: b6bb62d7-85a9-4a75-b9fe-170ce4b74481
+			column: 'Year Month'
+
+		level 'Week of Year'
+			lineageTag: e6127cf5-a143-4049-9368-b762a4287720
+			sourceLineageTag: 6f0dada8-2e82-4552-a8b6-5804ad5dcbee
+			column: 'Week of Year'
+
+		level Date
+			lineageTag: de9876f5-b867-42ea-bac9-2a2be8168307
+			sourceLineageTag: e970a6d9-c248-4d1c-bf3a-6bc516c590b8
+			column: Date
+
+	partition DIM_DATE = entity
+		mode: directQuery
+		source
+			entityName: DIM_DATE
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

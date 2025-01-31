@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Retailer Dashboard 2.0 (SF_1.0).SemanticModel"
+    },
+    "byConnection": null
+  }
+}

@@ -1,0 +1,1138 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.2.0/schema.json",
+  "displayName": "UC Online Reservations",
+  "name": "a3f902e51e053c49b7ca",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "5bca5688300620ee7ae8",
+      "4977cdc0c73b19ccc838",
+      "b0cbf16f67cb4fd003b5",
+      "14a31c37c541d4c7a316",
+      "6e4fab6fc9601c8a8282",
+      "a55553bb7e37743501c1",
+      "aa404b0546e1bef315c9",
+      "29ffd3d1d93d64af2919",
+      "25cde095e13bdd696eb5",
+      "fa595570d9582bffadc2",
+      "a97385f99ca74266e3ca",
+      "66ef677692cd9a501899",
+      "76c7c3b9ab6f43d15991",
+      "da216232b0ce05e69b9a",
+      "a09af3732b4250d263f7",
+      "cd1416150d55e7e20d27",
+      "0c7ebdd40e239994e70b",
+      "6eb071fd041102e9dca1",
+      "f6097cc50040cda76240",
+      "54a8f7e09094c58201ec",
+      "08f772d3910179748438",
+      "6b35272d75265d76a8b9",
+      "c7fd8b6cc71bd9c4b345",
+      "a4b77b90064dd03c9b07"
+    ],
+    "suppressActiveSection": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "151c47a7303295a3efe9",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "e1ba281566426a310a90",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_BRAND"
+                }
+              },
+              "Property": "Brand"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "51fd0b70553bb7071b0b",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_SITE_MARKET_REGION"
+                }
+              },
+              "Property": "Region"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "7b392bcf2de546e9006a",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_SITE_MARKET_REGION"
+                }
+              },
+              "Property": "NMSC"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "edd65ed83e92a2d06eb7",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_RETAILER"
+                }
+              },
+              "Property": "RETAILER_NAME"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "dabe2f01a0d211d8842d",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_TRANSACTIONAL_LEADS"
+                }
+              },
+              "Property": "TL Group"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "c72c7248368be1e07a71",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_TRANSACTIONAL_LEADS"
+                }
+              },
+              "Property": "TL Type"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "09e09f8b33c8e28c9120",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_DEVICE"
+                }
+              },
+              "Property": "Device"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "2dd5ea2f8056b028e3e9",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_MEDIA"
+                }
+              },
+              "Property": "Media"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "b3cbc66ead5324b9410d",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_MODEL"
+                }
+              },
+              "Property": "Model Type"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "d0f85a9139300702a2d8",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_MODEL"
+                }
+              },
+              "Property": "Model Name"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "2c5cafa47b04b4bcdc0b",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "DIM_NEW_USED"
+                }
+              },
+              "Property": "NEW_USED"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "151c47a7303295a3efe9": {
+        "visualContainers": {
+          "3325c733cc32fe07442b": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "835a26320a9251677c1f": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "da281c025ed4b1e8dc82": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| Total transactional leads"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "fb2053f4af572184f97c": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "TransactionalLeads_TestDrives"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d0b04b39af39377f0943": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "147464d94117632c7ab0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "TransactionalLeads_ContactRequests"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dadce5163b62b13cbf29": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "TransactionalLeads_ContactRequests (Phone)"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c2611076c8e6bb74bede": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| NC Online Reservations"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "89ab56222746676ffadf": {
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| UC Online Reservations"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "2e9164f64f20aa42f1e2": {
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "startDate": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "datetime'2023-06-01T00:00:00'"
+                            }
+                          }
+                        },
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DATE"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DATE"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8d3f9dd6f9c001198ddd": {
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {}
+            }
+          },
+          "39a8f269111ad3449513": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "93ab66c97235e7a2701e": {
+            "singleVisual": {
+              "visualType": "bookmarkNavigator",
+              "objects": {}
+            }
+          },
+          "76c7c3b9ab6f43d15991": {
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "TransactionalLeads_TestDrives"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DEVICE"
+                        }
+                      },
+                      "Property": "Device"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "da216232b0ce05e69b9a": {
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "TransactionalLeads_TestDrives"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_MEDIA"
+                        }
+                      },
+                      "Property": "Media"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a09af3732b4250d263f7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30b5ab6900a427debd2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DIM_DATE"
+                            }
+                          },
+                          "Hierarchy": "YEAR_NUMBER Hierarchy"
+                        }
+                      },
+                      "Level": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "aa404b0546e1bef315c9": {
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DEVICE"
+                        }
+                      },
+                      "Property": "Device"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "29ffd3d1d93d64af2919": {
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "TransactionalLeads_ContactRequests"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_MEDIA"
+                        }
+                      },
+                      "Property": "Media"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "25cde095e13bdd696eb5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30b5ab6900a427debd2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DIM_DATE"
+                            }
+                          },
+                          "Hierarchy": "YEAR_NUMBER Hierarchy"
+                        }
+                      },
+                      "Level": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "fa595570d9582bffadc2": {
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| Total transactional leads"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DEVICE"
+                        }
+                      },
+                      "Property": "Device"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a97385f99ca74266e3ca": {
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| Total transactional leads"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_MEDIA"
+                        }
+                      },
+                      "Property": "Media"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "66ef677692cd9a501899": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30b5ab6900a427debd2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DIM_DATE"
+                            }
+                          },
+                          "Hierarchy": "YEAR_NUMBER Hierarchy"
+                        }
+                      },
+                      "Level": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cd1416150d55e7e20d27": {
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| Total transactional leads"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DEVICE"
+                        }
+                      },
+                      "Property": "Device"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "0c7ebdd40e239994e70b": {
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| Total transactional leads"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_MEDIA"
+                        }
+                      },
+                      "Property": "Media"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6eb071fd041102e9dca1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30b5ab6900a427debd2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DIM_DATE"
+                            }
+                          },
+                          "Hierarchy": "YEAR_NUMBER Hierarchy"
+                        }
+                      },
+                      "Level": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f6097cc50040cda76240": {
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| NC Online Reservations"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DEVICE"
+                        }
+                      },
+                      "Property": "Device"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "54a8f7e09094c58201ec": {
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| NC Online Reservations"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_MEDIA"
+                        }
+                      },
+                      "Property": "Media"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "08f772d3910179748438": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30b5ab6900a427debd2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DIM_DATE"
+                            }
+                          },
+                          "Hierarchy": "YEAR_NUMBER Hierarchy"
+                        }
+                      },
+                      "Level": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6b35272d75265d76a8b9": {
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| UC Online Reservations"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_DEVICE"
+                        }
+                      },
+                      "Property": "Device"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c7fd8b6cc71bd9c4b345": {
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calculations"
+                        }
+                      },
+                      "Property": "Retailer| UC Online Reservations"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_MEDIA"
+                        }
+                      },
+                      "Property": "Media"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a4b77b90064dd03c9b07": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30b5ab6900a427debd2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DIM_TRANSACTIONAL_LEADS"
+                        }
+                      },
+                      "Property": "TL Type"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DIM_DATE"
+                            }
+                          },
+                          "Hierarchy": "YEAR_NUMBER Hierarchy"
+                        }
+                      },
+                      "Level": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "b0cbf16f67cb4fd003b5": {
+            "isHidden": true
+          },
+          "5bca5688300620ee7ae8": {
+            "isHidden": true
+          },
+          "4977cdc0c73b19ccc838": {
+            "isHidden": true
+          },
+          "14a31c37c541d4c7a316": {
+            "isHidden": true
+          },
+          "6e4fab6fc9601c8a8282": {
+            "isHidden": true
+          },
+          "a55553bb7e37743501c1": {
+            "isHidden": false
+          }
+        }
+      }
+    },
+    "objects": {}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "a55553bb7e37743501c1",
+  "position": {
+    "x": 14.331700489853043,
+    "y": 180.04198740377885,
+    "z": 11125,
+    "height": 262.44926522043386,
+    "width": 1251.3365990202938,
+    "tabOrder": 17000
+  },
+  "visualGroup": {
+    "displayName": "UC Online Reservations",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

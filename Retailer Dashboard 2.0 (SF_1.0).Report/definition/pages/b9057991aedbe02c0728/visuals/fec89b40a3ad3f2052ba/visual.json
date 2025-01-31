@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "fec89b40a3ad3f2052ba",
+  "position": {
+    "x": 15.88504245591117,
+    "y": 469.02677988242982,
+    "z": 18000,
+    "height": 35.114304376224688,
+    "width": 561.828870019595,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Total UC Sessions    Total Views    Views per Session   Average Session Duration   Bounce Rate",
+                    "textStyle": {
+                      "fontSize": "10.5pt",
+                      "textDecoration": "underline",
+                      "color": "#105169"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "isHidden": true
+}

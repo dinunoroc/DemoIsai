@@ -1,0 +1,262 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.2.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU08",
+      "reportVersionAtImport": "5.57",
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Toyota_Corporate_Identity025870590356407597.json",
+      "reportVersionAtImport": "5.57",
+      "type": "RegisteredResources"
+    }
+  },
+  "layoutOptimization": "None",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e1ba281566426a310a90",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_BRAND"
+              }
+            },
+            "Property": "Brand"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "51fd0b70553bb7071b0b",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_SITE_MARKET_REGION"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "7b392bcf2de546e9006a",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_SITE_MARKET_REGION"
+              }
+            },
+            "Property": "NMSC"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "edd65ed83e92a2d06eb7",
+        "displayName": "Retailer Name",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_RETAILER"
+              }
+            },
+            "Property": "RETAILER_NAME"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "dabe2f01a0d211d8842d",
+        "displayName": "Lead Group",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_TRANSACTIONAL_LEADS"
+              }
+            },
+            "Property": "TL Group"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "c72c7248368be1e07a71",
+        "displayName": "Lead Type",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_TRANSACTIONAL_LEADS"
+              }
+            },
+            "Property": "TL Type"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "09e09f8b33c8e28c9120",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_DEVICE"
+              }
+            },
+            "Property": "Device"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "2dd5ea2f8056b028e3e9",
+        "displayName": "Channel",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_MEDIA"
+              }
+            },
+            "Property": "Media"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "b3cbc66ead5324b9410d",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_MODEL"
+              }
+            },
+            "Property": "Model Type"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "d0f85a9139300702a2d8",
+        "ordinal": 9,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_MODEL"
+              }
+            },
+            "Property": "Model Name"
+          }
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "2c5cafa47b04b4bcdc0b",
+        "displayName": "New or Used",
+        "ordinal": 10,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_NEW_USED"
+              }
+            },
+            "Property": "NEW_USED"
+          }
+        },
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "MicrosoftTeams-image1951481441838243.png",
+          "path": "MicrosoftTeams-image1951481441838243.png",
+          "type": "Image"
+        },
+        {
+          "name": "Toyota_Corporate_Identity025870590356407597.json",
+          "path": "Toyota_Corporate_Identity025870590356407597.json",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU08",
+          "path": "BaseThemes/CY24SU08.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}

@@ -1,0 +1,43 @@
+table DIM_NEW_USED
+	lineageTag: 8a0cb846-b95c-447a-9065-a8f8b8134fb0
+	sourceLineageTag: 859eb075-b301-4825-afd5-88b5082a5b54
+
+	column NEW_USED_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 1f153a0d-037e-4821-bfd4-4577b57d0afe
+		sourceLineageTag: c7c0bef3-2085-4b38-883c-459d69370a35
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NEW_USED_ID
+
+		annotation SummarizationSetBy = User
+
+	column NEW_USED_KEY
+		dataType: string
+		lineageTag: 88971812-d258-4166-a63b-8ab5afc98b2a
+		sourceLineageTag: 6a00c141-ed43-4559-a32d-bc9b1434674b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NEW_USED_KEY
+
+		annotation SummarizationSetBy = User
+
+	column NEW_USED
+		dataType: string
+		lineageTag: a2f78dba-e4e8-4070-be14-f57ccfee1108
+		sourceLineageTag: 182d4048-8568-4f4c-86d2-571f14bd067a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NEW_USED
+
+		annotation SummarizationSetBy = User
+
+	partition DIM_NEW_USED = entity
+		mode: directQuery
+		source
+			entityName: DIM_NEW_USED
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

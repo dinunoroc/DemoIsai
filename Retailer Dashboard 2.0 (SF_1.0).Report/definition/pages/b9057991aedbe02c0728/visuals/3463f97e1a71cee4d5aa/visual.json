@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "3463f97e1a71cee4d5aa",
+  "position": {
+    "x": 16.505480335267571,
+    "y": 179.90973565441652,
+    "z": 15000,
+    "height": 264.08768536428113,
+    "width": 1250.2901353965185,
+    "tabOrder": 13000
+  },
+  "visualGroup": {
+    "displayName": "Sessions",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

@@ -1,0 +1,253 @@
+table Session
+	lineageTag: 40fad547-3b0e-41ff-9b81-610016224d45
+	sourceLineageTag: 4ebd2d93-711e-4ec2-b94c-d22bd9ee4b3b
+
+	column SESSION_KEY
+		dataType: string
+		lineageTag: 53844677-bdc9-41b5-93b2-1dcf684fb470
+		sourceLineageTag: a5d8aa90-dd79-40bd-a180-0517595540fc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SESSION_KEY
+
+		annotation SummarizationSetBy = User
+
+	column SESSION_ID
+		dataType: double
+		lineageTag: 1c33cda7-5b6c-47b8-a78f-bb0d4533cd59
+		sourceLineageTag: f934f489-27c7-4717-805e-3fc026cbe011
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: SESSION_ID
+
+		annotation SummarizationSetBy = User
+
+	column VISITOR_ID
+		dataType: double
+		lineageTag: 1482aaf0-1970-4d10-8f40-b810e519e326
+		sourceLineageTag: e1038db2-fa3d-499b-969b-06a49db29ce7
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: VISITOR_ID
+
+		annotation SummarizationSetBy = User
+
+	column BRAND_ID
+		dataType: double
+		lineageTag: 28c376bb-7a0f-4aa9-a80b-85b9393c282f
+		sourceLineageTag: 893d1fb8-1c9a-46c6-984c-6bdfb1773fa9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BRAND_ID
+
+		annotation SummarizationSetBy = User
+
+	column SESSION_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 924abf82-b2e0-4162-a503-1f0d10596efc
+		sourceLineageTag: 0b999cf4-c8d3-4eb5-b75a-fd09e6b91bab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SESSION_DATE
+
+		annotation SummarizationSetBy = User
+
+	column DEVICE_ID
+		dataType: double
+		lineageTag: e219ebf5-bd0f-4949-840c-f60a5737a6ee
+		sourceLineageTag: 8f0cbd6e-b018-4901-bf93-7c4074ec5804
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEVICE_ID
+
+		annotation SummarizationSetBy = User
+
+	column DEVICE_KEY
+		dataType: string
+		lineageTag: 8927f8a5-94b6-4e9a-8ae4-8771c1789171
+		sourceLineageTag: 7a92cf33-5416-4b75-a0dc-53badeb45008
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEVICE_KEY
+
+		annotation SummarizationSetBy = User
+
+	column SITE_ID
+		dataType: double
+		lineageTag: de005749-cf6a-4685-a548-b10f96bc8dec
+		sourceLineageTag: 4580cfb2-29ac-41a1-9a3a-67c89984cfe2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SITE_ID
+
+		annotation SummarizationSetBy = User
+
+	column SITE_KEY
+		dataType: string
+		lineageTag: 9aba6f2d-bed9-4134-a368-4feeee495b69
+		sourceLineageTag: 7b566b11-e4dd-45f2-99ff-a123d22f94fb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SITE_KEY
+
+		annotation SummarizationSetBy = User
+
+	column BROWSER_ID
+		dataType: double
+		lineageTag: 912d3815-e607-4efc-9515-84d124297c91
+		sourceLineageTag: ff3fef40-8b3d-4ea4-9446-501dc1557854
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BROWSER_ID
+
+		annotation SummarizationSetBy = User
+
+	column BROWSER_KEY
+		dataType: string
+		lineageTag: 809cea25-12ad-4630-b308-78f87143d4a6
+		sourceLineageTag: 8bd6bff7-c0f0-47aa-aa2b-d120fbb71d86
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BROWSER_KEY
+
+		annotation SummarizationSetBy = User
+
+	column MEDIA_ID
+		dataType: double
+		lineageTag: 46070f52-a955-4ba4-9220-0509e6752495
+		sourceLineageTag: 3cd31967-288b-4365-b77f-2abf1097ca77
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MEDIA_ID
+
+		annotation SummarizationSetBy = User
+
+	column MEDIA_KEY
+		dataType: string
+		lineageTag: 23c9c377-3678-48c1-99c0-b7bdb77bb975
+		sourceLineageTag: 71f7ed5a-8d6f-4b29-bc7f-edc6cbcd1a5a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MEDIA_KEY
+
+		annotation SummarizationSetBy = User
+
+	column MODEL_ID
+		dataType: double
+		lineageTag: 3aadd31f-9957-4581-a68f-46c7eb47bf58
+		sourceLineageTag: 5cda8577-5197-494f-b68c-08a31fa6e6f1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MODEL_ID
+
+		annotation SummarizationSetBy = User
+
+	column MODEL_KEY
+		dataType: string
+		lineageTag: 0731e93b-6af9-4aa2-9844-e06b35c6b20e
+		sourceLineageTag: 3f6b71e8-e66f-4fab-9965-1308192bb99e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MODEL_KEY
+
+		annotation SummarizationSetBy = User
+
+	column VISITED_MODEL_PAGE
+		dataType: double
+		lineageTag: c286253b-bf39-4abc-9a3a-a828c8ebd8d6
+		sourceLineageTag: f4d1b4b0-a9d6-48e8-8164-96443559695b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: VISITED_MODEL_PAGE
+
+		annotation SummarizationSetBy = User
+
+	column STARTED_CAR_CONFIG
+		dataType: double
+		lineageTag: ce72fa5b-ebf0-4f53-993f-2ab1ac35850e
+		sourceLineageTag: d882de39-3370-4a17-b83b-633366f5be47
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: STARTED_CAR_CONFIG
+
+		annotation SummarizationSetBy = User
+
+	column COMPLETED_CAR_CONFIG
+		dataType: double
+		lineageTag: 2c1c0845-4d50-4b1d-a86f-4ed9aae59ca9
+		sourceLineageTag: 62b20336-f0af-4ed7-a451-51db55074ea6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: COMPLETED_CAR_CONFIG
+
+		annotation SummarizationSetBy = User
+
+	column COMPLETED_FINANCE_CALCULATOR
+		dataType: double
+		lineageTag: 2e27b53f-8adb-42f3-bb64-88b9b22aff67
+		sourceLineageTag: 73e7aced-7212-41b4-a5ad-2e90aa399c94
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: COMPLETED_FINANCE_CALCULATOR
+
+		annotation SummarizationSetBy = User
+
+	column TL_ID
+		dataType: double
+		lineageTag: c5595ede-6f53-4816-a447-6d4171ae9ba8
+		sourceLineageTag: ee188a83-35d1-4381-acdb-fbe65ecaefd9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TL_ID
+
+		annotation SummarizationSetBy = User
+
+	column NEW_USED_FILTER_ID
+		dataType: double
+		lineageTag: a8f58ad9-a596-4f85-a3cc-3164b617bf81
+		sourceLineageTag: 1ceccde8-a4ec-4d23-b254-c500c51258ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NEW_USED_FILTER_ID
+
+		annotation SummarizationSetBy = User
+
+	column AEM_RELEASE_ID
+		dataType: double
+		lineageTag: b4e97e4e-4e8c-4b6d-a3fb-0761934989d7
+		sourceLineageTag: 3a591e26-f235-4e68-9081-dfcabee21616
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: AEM_RELEASE_ID
+
+		annotation SummarizationSetBy = User
+
+	column APH_BUILD_RELEASE_ID
+		dataType: double
+		lineageTag: 9c0a08be-9ff0-419d-82db-03c237322935
+		sourceLineageTag: c96cbbe7-fd7a-42fd-9353-fcdf67d374b0
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: APH_BUILD_RELEASE_ID
+
+		annotation SummarizationSetBy = User
+
+	column TOTAL_SECONDS_SPENT
+		dataType: double
+		lineageTag: 4e26ce4a-c9d0-46d1-b2be-0cac3e812882
+		sourceLineageTag: dee968dd-82c3-4c69-8222-9142b816ae3e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TOTAL_SECONDS_SPENT
+
+		annotation SummarizationSetBy = User
+
+	partition Session = entity
+		mode: directQuery
+		source
+			entityName: Session
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "4ee8f5b6db41c862d9ad",
+  "displayName": "Metrics by Device",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": -0.1
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "60D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "30f2ebbd64826add37bb",
+      "target": "4cf796d84d0256a23816",
+      "type": "NoFilter"
+    },
+    {
+      "source": "783f009449b7ee77fbae",
+      "target": "4cf796d84d0256a23816",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4cf796d84d0256a23816",
+      "target": "783f009449b7ee77fbae",
+      "type": "DataFilter"
+    }
+  ]
+}

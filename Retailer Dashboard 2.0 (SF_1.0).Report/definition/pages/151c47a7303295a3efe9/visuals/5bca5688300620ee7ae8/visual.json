@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "5bca5688300620ee7ae8",
+  "position": {
+    "x": 14.120700843608047,
+    "y": 179.41596365996108,
+    "z": 12000,
+    "height": 263.30953926022062,
+    "width": 1251.758598312784,
+    "tabOrder": 14000
+  },
+  "visualGroup": {
+    "displayName": "Contact Requests",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

@@ -1,0 +1,137 @@
+table DIM_SITE_MARKET_REGION
+	lineageTag: b754983b-5bdf-444a-b460-c74ac0bea177
+	sourceLineageTag: b6e96303-1b3e-4c7e-b35b-9f1cbc51e58c
+
+	column SITE_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 1e3c4e22-3aa3-463c-869a-42bee4c1e483
+		sourceLineageTag: 625cde23-5d13-4bb3-bfc9-f88e8add8f42
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SITE_ID
+
+		annotation SummarizationSetBy = User
+
+	column MARKET_ID
+		dataType: double
+		lineageTag: b103bda6-afe7-4f04-98cd-0d2be4a1d2f0
+		sourceLineageTag: a1b9ae59-cd8e-4c8e-ae4b-0ee7c1a601fc
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: MARKET_ID
+
+		annotation SummarizationSetBy = User
+
+	column Market
+		dataType: string
+		lineageTag: 3a8eeff1-ca75-413d-8f82-6db52ec98234
+		sourceLineageTag: 49315056-2fda-47ed-98e7-5cc86cdd31c0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Market
+
+		annotation SummarizationSetBy = User
+
+	column NMSC
+		dataType: string
+		lineageTag: 3a79e78e-5236-4feb-b669-ccd3086c9d13
+		sourceLineageTag: 195d5bc9-fc91-409e-8b77-39c9181ebaca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: NMSC
+
+		annotation SummarizationSetBy = User
+
+	column Region
+		dataType: string
+		lineageTag: 0ab44c75-02d3-48ce-8232-e71bc5ba3bb0
+		sourceLineageTag: f2b8db9a-1b27-4d96-b53a-0990e430a46a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = User
+
+	column REGION_ID
+		dataType: double
+		lineageTag: 539eedf3-1f65-4041-b801-a5b2e7ec6dae
+		sourceLineageTag: ab45a7ce-5b3f-48fb-bb42-113e9e8fa02f
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: REGION_ID
+
+		annotation SummarizationSetBy = User
+
+	column SUBREGION
+		dataType: string
+		lineageTag: a624bc4a-8a66-48cd-95bf-4a31f6e2a1c0
+		sourceLineageTag: 372e82a8-fea5-4508-ad28-70608422113a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SUBREGION
+
+		annotation SummarizationSetBy = User
+
+	column SUBREGION_ID
+		dataType: double
+		lineageTag: 137c8bae-2f2f-401a-933a-5c50c14a52c5
+		sourceLineageTag: b0ec8f21-90df-465e-8f8f-63c9b762c31e
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: SUBREGION_ID
+
+		annotation SummarizationSetBy = User
+
+	column SITE_KEY
+		dataType: string
+		lineageTag: 171b36e1-6b12-4429-87a5-1ccdd99acc7e
+		sourceLineageTag: 05c271ca-d2be-49e6-a096-88014d21ee4f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SITE_KEY
+
+		annotation SummarizationSetBy = User
+
+	column SITE
+		dataType: string
+		lineageTag: 7cc0496c-5df2-42c8-a720-16e2b15e47a4
+		sourceLineageTag: 09f84cca-7e37-4784-93b1-44dcc7403067
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SITE
+
+		annotation SummarizationSetBy = User
+
+	column AFFILIATE_STATUS
+		dataType: string
+		lineageTag: e73b8527-fa70-4772-8e59-279e6f3c0ffb
+		sourceLineageTag: 58803e3a-8ea6-45ce-b47f-820547a62143
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AFFILIATE_STATUS
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'MARKET Hierarchy'
+		lineageTag: 5c23d73d-a0ec-47f6-b380-410f21a3736f
+		sourceLineageTag: ba2da2e5-ac76-4872-b188-a89d04cbfed2
+
+		level Region
+			lineageTag: 55a5979d-708b-44d0-b029-75c9f2737b26
+			sourceLineageTag: 5712b870-01fb-4093-a378-1b0207387a4f
+			column: Region
+
+		level Market
+			lineageTag: 46892d5b-868e-4aa9-bbb2-9488f228186a
+			sourceLineageTag: 5a21c1a4-dbd0-4f5d-a564-e2d4aab9d079
+			column: Market
+
+	partition DIM_SITE_MARKET_REGION = entity
+		mode: directQuery
+		source
+			entityName: DIM_SITE_MARKET_REGION
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

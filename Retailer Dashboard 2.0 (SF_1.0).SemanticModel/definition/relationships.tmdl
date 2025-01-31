@@ -1,0 +1,132 @@
+relationship 83520613-fa74-4990-94e8-62b00f5af6f7
+	fromColumn: Session.DEVICE_ID
+	toColumn: DIM_DEVICE.DEVICE_ID
+
+relationship 4ecc3b9b-c1e5-4e59-a368-228319cf9e94
+	fromColumn: Session.BROWSER_ID
+	toColumn: DIM_BROWSER.BROWSER_ID
+
+relationship af216fe4-ff6a-4e2f-88d2-be6acfa4103b
+	fromColumn: Session.MODEL_ID
+	toColumn: DIM_MODEL.MODEL_ID
+
+relationship 4c893c6f-8433-4ea9-85d3-cc1341ec69c3
+	fromColumn: Session.SITE_ID
+	toColumn: DIM_SITE_MARKET_REGION.SITE_ID
+
+relationship ea4b325e-151b-4186-a4be-eb5d80b42e3e
+	fromColumn: Session.BRAND_ID
+	toColumn: DIM_BRAND.BRAND_ID
+
+relationship 90ba4c58-63c1-4f76-bfae-7c7ffe2be985
+	fromColumn: Session.MEDIA_ID
+	toColumn: DIM_MEDIA.MEDIA_ID
+
+relationship 3e2b8ee4-c79c-40d6-af66-53c6a0fb3791
+	fromColumn: Session.SESSION_DATE
+	toColumn: DIM_DATE.Date
+
+relationship 61847359-0a03-4bce-a86f-b909f27c0089
+	fromColumn: Session.TL_ID
+	toColumn: DIM_TRANSACTIONAL_LEADS.TL_TYPE_ID
+
+relationship c9dec079-175f-4a9d-88c2-891bab6dbe58
+	fromColumn: Session.NEW_USED_FILTER_ID
+	toColumn: DIM_NEW_USED.NEW_USED_ID
+
+relationship 1ac3a778-f069-4e4f-88fe-1d3dd83d2c04
+	fromColumn: FACT_CUSTOMER_FEEDBACK.DATE_ID
+	toColumn: DIM_DATE.DATE_ID
+
+relationship 77d5e2a4-6b7a-4a8c-9e80-5b56d321f04b
+	fromColumn: FACT_CUSTOMER_FEEDBACK.DEVICE_ID
+	toColumn: DIM_DEVICE.DEVICE_ID
+
+relationship ed07bb5e-1f0f-4e65-a841-b84fd9da6439
+	fromColumn: FACT_CUSTOMER_FEEDBACK.MODEL_ID
+	toColumn: DIM_MODEL.MODEL_ID
+
+relationship 120b9c18-f6db-4a79-a1ca-4bf4c2ec8d4c
+	fromColumn: FACT_CUSTOMER_FEEDBACK.BRAND_ID
+	toColumn: DIM_BRAND.BRAND_ID
+
+relationship c1a76c1e-6878-464a-af71-11dd77d0687a
+	fromColumn: FACT_CUSTOMER_FEEDBACK.SITE_ID
+	toColumn: DIM_SITE_MARKET_REGION.SITE_ID
+
+relationship bc6e3f52-dd39-4e2e-a6ce-d51ef98cb0cc
+	fromColumn: FACT_RETAILER_TRAFFIC.BRAND_ID
+	toColumn: DIM_BRAND.BRAND_ID
+
+relationship 51066e38-d793-4640-9e96-c0e048a9c201
+	fromColumn: FACT_RETAILER_TRAFFIC.BROWSER_ID
+	toColumn: DIM_BROWSER.BROWSER_ID
+
+relationship f5cc52b2-bcf1-479f-b90d-3b3ad86ca427
+	fromColumn: FACT_RETAILER_TRAFFIC.SESSION_DATE
+	toColumn: DIM_DATE.Date
+
+relationship dd1e6d69-c8e2-45c6-93fe-a3db84912934
+	fromColumn: FACT_RETAILER_TRAFFIC.DEVICE_ID
+	toColumn: DIM_DEVICE.DEVICE_ID
+
+relationship 46e18075-55c1-4cf1-8fff-89d9e943a119
+	fromColumn: FACT_RETAILER_TRAFFIC.MEDIA_ID
+	toColumn: DIM_MEDIA.MEDIA_ID
+
+relationship 0330c13c-0921-48ec-afe1-990977adf8ef
+	fromColumn: FACT_RETAILER_TRAFFIC.MODEL_ID
+	toColumn: DIM_MODEL.MODEL_ID
+
+relationship a5842fc0-c29a-4a07-84b4-159bcdd0a15f
+	fromColumn: FACT_RETAILER_TRAFFIC.SITE_ID
+	toColumn: DIM_SITE_MARKET_REGION.SITE_ID
+
+relationship decf2922-ac46-4f20-9859-50fc7de29508
+	fromColumn: FACT_RETAILER_TRAFFIC.TL_ID
+	toColumn: DIM_TRANSACTIONAL_LEADS.TL_TYPE_ID
+
+relationship 2c536e2b-d7d3-417b-9f08-ae48ddd59041
+	fromColumn: FACT_RETAILER_TRAFFIC.NEW_USED_FILTER_ID
+	toColumn: DIM_NEW_USED.NEW_USED_ID
+
+relationship a0713746-6b32-4789-a2a7-b537ba71f891
+	fromColumn: FACT_RETAILER_TRAFFIC.RETAILER_PAGE_ID
+	toColumn: DIM_RETAILER.RETAILER_PAGE_ID
+
+relationship ba49aae0-c930-41d9-903a-9c2a86b2e4de
+	fromColumn: FACT_APHELEIA_SESSIONS.BRAND_ID
+	toColumn: DIM_BRAND.BRAND_ID
+
+relationship e866e9f5-d628-44c1-944f-4ff584318c1d
+	fromColumn: FACT_APHELEIA_SESSIONS.BROWSER_ID
+	toColumn: DIM_BROWSER.BROWSER_ID
+
+relationship 745a09d9-59a7-4ef3-b45e-f3514fa0b5c2
+	fromColumn: FACT_APHELEIA_SESSIONS.SESSION_DATE
+	toColumn: DIM_DATE.Date
+
+relationship bcb1252d-66f4-42af-9e0f-30256bb34d7f
+	fromColumn: FACT_APHELEIA_SESSIONS.DEVICE_ID
+	toColumn: DIM_DEVICE.DEVICE_ID
+
+relationship 54a6aa9e-633c-4dcd-9991-a40f1c03f558
+	fromColumn: FACT_APHELEIA_SESSIONS.MEDIA_ID
+	toColumn: DIM_MEDIA.MEDIA_ID
+
+relationship 00bb7b99-89bf-4e14-bf97-5ecb8fce7f57
+	fromColumn: FACT_APHELEIA_SESSIONS.MODEL_ID
+	toColumn: DIM_MODEL.MODEL_ID
+
+relationship 1ada2671-4eb6-44b4-b8e5-63a52f3cf89f
+	fromColumn: FACT_APHELEIA_SESSIONS.NEW_USED_FILTER_ID
+	toColumn: DIM_NEW_USED.NEW_USED_ID
+
+relationship a03628a4-0979-4e47-b064-2bf8ed6318dd
+	fromColumn: FACT_APHELEIA_SESSIONS.SITE_ID
+	toColumn: DIM_SITE_MARKET_REGION.SITE_ID
+
+relationship 1c460afa-5f35-49f2-a54d-ba699872ff53
+	fromColumn: FACT_APHELEIA_SESSIONS.TL_ID
+	toColumn: DIM_TRANSACTIONAL_LEADS.TL_TYPE_ID
+

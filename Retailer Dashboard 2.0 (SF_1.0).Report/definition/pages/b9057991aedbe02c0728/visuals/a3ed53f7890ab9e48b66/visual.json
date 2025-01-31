@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "a3ed53f7890ab9e48b66",
+  "position": {
+    "x": 16.290909090909089,
+    "y": 179.97575757575757,
+    "z": 14000,
+    "height": 262.20606060606059,
+    "width": 636.89696969696968,
+    "tabOrder": 14000
+  },
+  "visualGroup": {
+    "displayName": "UC Sessions",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}

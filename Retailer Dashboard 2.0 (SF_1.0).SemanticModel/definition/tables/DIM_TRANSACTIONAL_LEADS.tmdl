@@ -1,0 +1,67 @@
+table DIM_TRANSACTIONAL_LEADS
+	lineageTag: 73d4d3a7-f75e-4bea-9dea-f0617ee3d54c
+	sourceLineageTag: 24e49769-83d7-4670-a658-bdda1471d29d
+
+	column 'TL Group'
+		dataType: string
+		lineageTag: 9b30712c-b28e-44a1-a507-2adc50c24236
+		sourceLineageTag: ecf19309-3e96-4f4a-9986-94570345c695
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TL Group
+
+		annotation SummarizationSetBy = User
+
+	column TL_TYPE_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 776c3031-5f72-499f-8a44-19ec8fe52e7d
+		sourceLineageTag: 87673bc2-e660-4938-8edb-2fdad9d890bc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TL_TYPE_ID
+
+		annotation SummarizationSetBy = User
+
+	column TL_TYPE_KEY
+		dataType: string
+		lineageTag: 785aabc7-7683-48a5-adaa-3fe6cdbbf857
+		sourceLineageTag: 82f0ab1a-45f4-4f41-b3fa-11e64190c95d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TL_TYPE_KEY
+
+		annotation SummarizationSetBy = User
+
+	column 'TL Type'
+		dataType: string
+		lineageTag: 213e6dc4-1778-4cad-9dc4-45dca8cb5746
+		sourceLineageTag: 2f5085be-edfb-4844-946c-73628722b4bf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TL Type
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'TL_GROUP Hierarchy'
+		lineageTag: 11749062-be9d-456d-80a7-46541c0c4841
+		sourceLineageTag: c5f584b9-7018-48e7-961f-259fe24be076
+
+		level 'TL Group'
+			lineageTag: 3d1cab27-dc34-4216-94e2-b8baba65fbb3
+			sourceLineageTag: dfc220ac-a661-490b-aefa-1a151c3bbcd1
+			column: 'TL Group'
+
+		level 'TL Type'
+			lineageTag: 23685be6-c1a7-42b2-95c0-cbd5a0ef01cf
+			sourceLineageTag: 3d386e06-ce90-42bc-9a4a-24750a647537
+			column: 'TL Type'
+
+	partition DIM_TRANSACTIONAL_LEADS = entity
+		mode: directQuery
+		source
+			entityName: DIM_TRANSACTIONAL_LEADS
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

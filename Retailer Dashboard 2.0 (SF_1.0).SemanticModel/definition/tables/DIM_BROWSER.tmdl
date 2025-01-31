@@ -1,0 +1,43 @@
+table DIM_BROWSER
+	lineageTag: 3aa547ec-fc1c-4280-ad25-d624946c5ec0
+	sourceLineageTag: e2ecd8ae-4c54-42fa-b184-908a71af1a0a
+
+	column BROWSER_KEY
+		dataType: string
+		lineageTag: 54c8e343-cecd-499c-a5e8-6157f8f362c5
+		sourceLineageTag: d8377568-19cf-412c-844e-5dc2316554a6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BROWSER_KEY
+
+		annotation SummarizationSetBy = User
+
+	column BROWSER_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 5b28bd6f-43d0-4e38-b113-b17170c749f6
+		sourceLineageTag: 26e81a9d-47d0-4fd3-b155-496e7070e5a3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BROWSER_ID
+
+		annotation SummarizationSetBy = User
+
+	column BROWSER
+		dataType: string
+		lineageTag: 104c51c6-04f7-421c-a8a8-950254475745
+		sourceLineageTag: f2cee275-9bf0-4954-bfd6-cf7a29035108
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BROWSER
+
+		annotation SummarizationSetBy = User
+
+	partition DIM_BROWSER = entity
+		mode: directQuery
+		source
+			entityName: DIM_BROWSER
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

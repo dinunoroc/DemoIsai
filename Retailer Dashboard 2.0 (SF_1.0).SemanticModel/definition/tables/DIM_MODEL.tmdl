@@ -1,0 +1,97 @@
+table DIM_MODEL
+	lineageTag: 117f9a74-e053-490c-bbca-560277a5ed50
+	sourceLineageTag: 2b3db379-0d54-4299-b382-7bc6d05d1609
+
+	column MODEL_KEY
+		dataType: string
+		lineageTag: 1d5455f2-4f66-4249-beba-1ba1d8202a4b
+		sourceLineageTag: 2a253dd3-250f-46c9-baa7-fb6472f21d30
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MODEL_KEY
+
+		annotation SummarizationSetBy = User
+
+	column MODEL_BK
+		dataType: string
+		lineageTag: c601439e-b25e-4ba1-afd7-44c2a1e38a5c
+		sourceLineageTag: f192aa46-f89d-4993-961d-cdf7b57d896b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MODEL_BK
+
+		annotation SummarizationSetBy = User
+
+	column MODEL_ID
+		dataType: double
+		isNullable: false
+		lineageTag: 4196f14a-01c0-406c-bb02-fabd9e098388
+		sourceLineageTag: e3e5018b-fc2c-4374-a4a7-3ec086d95545
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MODEL_ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Model Name'
+		dataType: string
+		lineageTag: a5c6415b-fdad-448b-a3cb-96b0e9a329f0
+		sourceLineageTag: 66de5349-e292-43a7-bbdd-e00276e09526
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Model Name
+
+		annotation SummarizationSetBy = User
+
+	column UUID
+		dataType: string
+		lineageTag: b60cc8aa-bd10-4aac-933c-7fc9f33055ac
+		sourceLineageTag: 839bf3c2-c2a0-458a-9e0c-8b4c051b3fc3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UUID
+
+		annotation SummarizationSetBy = User
+
+	column 'Model Type'
+		dataType: string
+		lineageTag: 0fdb4660-8e94-4066-b985-8489e9e310c1
+		sourceLineageTag: 9c0d020a-577f-465f-9e3e-10d0ad6b70cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Model Type
+
+		annotation SummarizationSetBy = User
+
+	column BRAND
+		dataType: string
+		lineageTag: ead30ccd-4fee-4ae2-962d-46bb174eec42
+		sourceLineageTag: 8b160096-40fd-4215-a094-bec8f35129de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BRAND
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'MODEL_TYPE Hierarchy'
+		lineageTag: de9c2aab-6241-46c2-b762-d9f5a6ed7794
+		sourceLineageTag: ed54e4d6-415b-40eb-9ea7-b1d8d6d76f8f
+
+		level 'Model Type'
+			lineageTag: 6ed22c0f-0d93-4e89-8901-641c01ea342c
+			sourceLineageTag: 7c7c5659-3e8c-4d04-869a-e1fe78fe56ec
+			column: 'Model Type'
+
+		level 'Model Name'
+			lineageTag: 449c5211-58fd-41d5-a5a9-7cb969c1fad6
+			sourceLineageTag: 9e24e2ae-303b-4370-a884-f2ea3a422ce1
+			column: 'Model Name'
+
+	partition DIM_MODEL = entity
+		mode: directQuery
+		source
+			entityName: DIM_MODEL
+			expressionSource: 'DirectQuery to AS - Website Conversion SF_DEV'
+
+	annotation PBI_ResultType = Exception
+

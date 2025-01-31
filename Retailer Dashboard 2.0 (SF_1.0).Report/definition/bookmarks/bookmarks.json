@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
+  "items": [
+    {
+      "name": "9cd4de10dae7bd9b9959",
+      "displayName": "Performance Overview",
+      "children": [
+        "f04e96be01c2dcccdbc9",
+        "490c9cd23c8a0ac8bd8a",
+        "22cdaefb026a7026e0ed"
+      ]
+    },
+    {
+      "name": "163f00161da135b0dc30",
+      "displayName": "Conversion Overview",
+      "children": [
+        "81d383e374a7b2d93a9c",
+        "12199c70a309da334690",
+        "91687cf0029066665130",
+        "3610a4133951da3d99a5",
+        "2dbb9cb8cc93d752b083",
+        "a3f902e51e053c49b7ca"
+      ]
+    }
+  ]
+}

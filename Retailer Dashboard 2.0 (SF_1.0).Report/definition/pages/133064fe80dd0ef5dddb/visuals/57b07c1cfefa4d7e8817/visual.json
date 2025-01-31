@@ -1,0 +1,241 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "57b07c1cfefa4d7e8817",
+  "position": {
+    "x": 858,
+    "y": 48,
+    "z": 1000,
+    "height": 312,
+    "width": 409,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_DEVICE"
+                    }
+                  },
+                  "Property": "Device"
+                }
+              },
+              "queryRef": "DIM_DEVICE.Device",
+              "nativeQueryRef": "Device",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_DATE"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "DIM_DATE.Date",
+              "nativeQueryRef": "Earliest Date",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calculations"
+                    }
+                  },
+                  "Property": "Retailer| ContactRequests (Phone)"
+                }
+              },
+              "queryRef": "Calculations.Retailer| ContactRequests (Phone)",
+              "nativeQueryRef": "Retailer| ContactRequests (Phone)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calculations"
+                    }
+                  },
+                  "Property": "Retailer| ContactRequests"
+                }
+              },
+              "queryRef": "Calculations.Retailer| ContactRequests",
+              "nativeQueryRef": "Retailer| ContactRequests"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calculations"
+                    }
+                  },
+                  "Property": "Retailer| Total Transactional Leads"
+                }
+              },
+              "queryRef": "Calculations.Retailer| Total Transactional Leads",
+              "nativeQueryRef": "Retailer| Total Transactional Leads"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calculations"
+                    }
+                  },
+                  "Property": "TEST1"
+                }
+              },
+              "queryRef": "Calculations.TEST1",
+              "nativeQueryRef": "TEST1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calculations"
+                    }
+                  },
+                  "Property": "TEST2"
+                }
+              },
+              "queryRef": "Calculations.TEST2",
+              "nativeQueryRef": "TEST2"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DIM_DEVICE"
+                  }
+                },
+                "Property": "Device"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "DIM_DEVICE.Device"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_DEVICE"
+                    }
+                  },
+                  "Property": "Device"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "DIM_DATE.Date"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "74.62204283339138D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Calculations.Retailer| ContactRequests (Phone)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "66.98965441020805D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Calculations.Retailer| ContactRequests"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75.8478450082833D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Calculations.Retailer| Total Transactional Leads"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "103D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DIM_DEVICE.Device"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

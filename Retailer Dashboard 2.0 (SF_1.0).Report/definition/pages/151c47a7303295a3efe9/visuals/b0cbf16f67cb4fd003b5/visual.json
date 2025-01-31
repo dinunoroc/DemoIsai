@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "b0cbf16f67cb4fd003b5",
+  "position": {
+    "x": 14.854932301740813,
+    "y": 179.90973565441652,
+    "z": 13000,
+    "height": 263.26241134751774,
+    "width": 1251.9571889103804,
+    "tabOrder": 13000
+  },
+  "visualGroup": {
+    "displayName": "Test Drive",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}
